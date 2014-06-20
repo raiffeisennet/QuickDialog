@@ -27,8 +27,8 @@ Pod::Spec.new do |s|
   s.default_subspec = "Core"
 
   s.subspec "Core" do |sp|
-    sp.source_files = "Classes/*"
-#    sp.source_files = "Classes/Core/**/*.h"
+   
+    sp.source_files = "Classes/**/**/*.h"
  # 	sp.resources = 'Assets/Core/*.png'
   end
   
