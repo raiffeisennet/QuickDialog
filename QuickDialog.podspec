@@ -20,7 +20,6 @@ Pod::Spec.new do |s|
   s.author           = { "Eduardo Scoz" => "eduardoscoz@gmail.com" }
   s.source           = { :git => "https://github.com/escoz/QuickDialog.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/escoz'
-  s.source_files = 'quickdialog', '*.{h,m}'
   s.platform     = :ios, '7.0'
   s.requires_arc = true
 
@@ -28,7 +27,7 @@ Pod::Spec.new do |s|
 
   s.subspec "Core" do |sp|
    
-    sp.source_files = "Classes/**/**/*.h"
+    sp.source_files = "Classes/**/**/*.{h,m}"
  # 	sp.resources = 'Assets/Core/*.png'
   end
   
