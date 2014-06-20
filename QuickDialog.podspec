@@ -28,6 +28,7 @@ Pod::Spec.new do |s|
 
   s.subspec "Core" do |sp|
     sp.source_files = "Classes/Core/**/*.m"
+    sp.source_files = "Classes/Core/**/*.h"
  # 	sp.resources = 'Assets/Core/*.png'
   end
   
