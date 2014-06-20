@@ -27,17 +27,17 @@ Pod::Spec.new do |s|
 
   s.subspec "Core" do |sp|
    
-    sp.source_files = "Classes/**/**/*.{h,m}"
+    sp.source_files = "Classes/Core/**/*.{h,m}"
  # 	sp.resources = 'Assets/Core/*.png'
   end
   
   s.subspec "Forms" do |sp|
-    sp.source_files = "Classes/Forms"
+    sp.source_files = "Classes/Forms/**/*.{h,m}"
     sp.dependency 'QuickDialog/Core'
   end
   
   s.subspec "Extras" do |sp|
-    sp.source_files = "Classes/Extras"
+    sp.source_files = "Classes/Extras/**/*.{h,m}"
     sp.dependency 'QuickDialog/Core'
   end
 
