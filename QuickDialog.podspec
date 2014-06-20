@@ -32,15 +32,15 @@ Pod::Spec.new do |s|
  # 	sp.resources = 'Assets/Core/*.png'
   end
   
-  #s.subspec "Forms" do |sp|
-  #  sp.source_files = "Classes/Forms"
-  #  sp.dependency 'QuickDialog/Core'
-  #end
+  s.subspec "Forms" do |sp|
+    sp.source_files = "Classes/Forms"
+    sp.dependency 'QuickDialog/Core'
+  end
   
-  #s.subspec "Extras" do |sp|
-  #  sp.source_files = "Classes/Extras"
-  #  sp.dependency 'QuickDialog/Core'
-  #end
+  s.subspec "Extras" do |sp|
+    sp.source_files = "Classes/Extras"
+    sp.dependency 'QuickDialog/Core'
+  end
 
   # s.public_header_files = 'Classes/**/*.h'
   # s.frameworks = 'SomeFramework', 'AnotherFramework'
