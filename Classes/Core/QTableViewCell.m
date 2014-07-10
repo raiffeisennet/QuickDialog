@@ -91,6 +91,15 @@ static const int kCellMinimumLabelWidth = 80;
                 QCellMargin,
                 detailsWidth - (self.accessoryView ==nil ? 0 : QCellMarginDouble) - (self.accessoryType !=UITableViewCellAccessoryNone ? 0 : QCellMarginDouble),
                 bounds.size.height- QCellMarginDouble);
+        
+        if (self.imageView.image!=nil && !self.textLabel.text){
+            self.detailTextLabel.frame = CGRectMake(
+                                                    bounds.size.width - detailsWidth + 50,
+                                                    QCellMargin,
+                                                    detailsWidth - (self.accessoryView ==nil ? 0 : QCellMarginDouble) - (self.accessoryType !=UITableViewCellAccessoryNone ? 0 : QCellMarginDouble) - 50,
+                                                    bounds.size.height- QCellMarginDouble);
+            
+        }
     }
 }
 
